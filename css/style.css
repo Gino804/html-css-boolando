@@ -18,12 +18,13 @@ header
     top:0;
     left:0;
     right:0;
+    z-index:1;
 }
 
 body
 {
-    margin-top:150px;
     font-family:sans-serif;
+    margin-top:150px;
 }
 
 ul
@@ -48,6 +49,15 @@ a
 {
     max-width:75%;
     margin:auto;
+}
+
+.tag
+{
+    color:white;
+    font-size:13px;
+    font-weight:bold;
+    display:inline;
+    padding:5px 10px;
 }
 
 /* Header */
@@ -77,12 +87,87 @@ header > div
 .row
 {
     flex-wrap:wrap;
-    gap:10px;
+    gap:20px;
+    justify-content:center;
 }
 
 .column
 {
-    flex-basis:calc(100% / 3 - 20px);
-    border:2px dashed black;
-    height:600px;
+    flex-basis:calc(100% / 3 - 40px);
+    position:relative;
+    top:0;
+    left:0;
+}
+
+.card-img
+{
+    width:100%;
+}
+
+.img-hover
+{
+    position:absolute;
+    top:0;
+    left:0;
+    opacity:0;
+}
+
+.card-img:hover
+{
+    opacity:0;
+}
+
+.img-hover:hover
+{
+    opacity:1;
+}
+
+.heart:hover
+{
+    color:red;
+    cursor:pointer;
+}
+
+.favorite
+{
+    position:absolute;
+    top:10px;
+    right:0;
+    background-color:white;
+    font-size:35px;
+    padding:5px 15px;
+}
+
+.labels
+{
+    position:absolute;
+    bottom:100px;
+    left:0;
+}
+
+.discount
+{
+    background-color:red;
+}
+
+.sustainability
+{
+    background-color:green;
+}
+
+.brand
+{
+    font-size:14px;
+}
+
+.price
+{
+    color:red;
+    font-size:14px;
+}
+
+.old-price
+{
+    color:black;
+    text-decoration: line-through;
 }
