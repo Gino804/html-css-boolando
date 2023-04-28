@@ -44,6 +44,12 @@ a
     display:flex;
 }
 
+.container
+{
+    max-width:75%;
+    margin:auto;
+}
+
 /* Header */
 
 header > div
@@ -64,4 +70,19 @@ header > div
 .logo
 {
     height:33px;
+}
+
+/* Main */
+
+.row
+{
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+.column
+{
+    flex-basis:calc(100% / 3 - 20px);
+    border:2px dashed black;
+    height:600px;
 }
