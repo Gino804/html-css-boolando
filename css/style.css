@@ -82,6 +82,11 @@ header > div
     height:33px;
 }
 
+.icon
+{
+    padding:0 5px;
+}
+
 /* Main */
 
 .row
